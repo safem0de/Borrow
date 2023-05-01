@@ -1,3 +1,7 @@
+<script>
+    <?php require_once dirname(APPROOT). '/public/js/main.js' ?>
+</script>
+
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
   <p class="col-md-5 mb-0 text-muted">© 2023 Sony Technology (Thailand) Co., Ltd. - MFD</p>
 
