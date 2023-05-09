@@ -2,9 +2,63 @@
 <!-- https://artisansweb.net/drag-drop-file-upload-using-javascript-php/ -->
 <!-- https://codepen.io/dcode-software/pen/xxwpLQo -->
 
+<!-- https://www.studentstutorial.com/php/mvc/import# -->
+
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
 <div class="row">
+    <div class="col-md-9 px-3">
+
+        <div class="col-md-6 mx-2">
+            <div class="input-group my-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">search</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="form-row d-flex my-2">
+            <div class="form-group col-md-6 mx-2">
+                <label for="inputEmail4">Model</label>
+                <input type="date" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6 mx-2">
+                <label for="inputEmail4">Status</label>
+                <input type="date" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="form-row d-flex my-2">
+            <div class="form-group col-md-6 mx-2">
+                <label for="inputEmail4">First Serial</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6 mx-2">
+                <label for="inputEmail4">Last Serial</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="form-row d-flex my-2">
+            <div class="form-group col-md-6 mx-2">
+                <label for="inputEmail4">From Date</label>
+                <input type="date" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6 mx-2">
+                <label for="inputEmail4">To Date</label>
+                <input type="date" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="form-group mx-2 my-3">
+            <button type="submit" class="btn btn-primary">Filter</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+        </div>
+    </div>
+
+
     <div class="col-md-3 my-3 text-center">
         <h4>CSV file upload</h4>
         <p>กรุณาลากวาง หรือ คลิ๊ก เพื่ออัพโหลดไฟล์</p>
@@ -13,6 +67,17 @@
             <div class="drop-zone">
                 <span class="drop-zone__prompt">Drag & drop file here or click to upload</span>
                 <input type="file" name="myFile" class="drop-zone__input">
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-4 px-2">test</div>
+                <div class="col-4 px-2">test2</div>
+                <div class="col-4 px-2">test3</div>
+            </div> -->
+            <div class="btn-group my-2" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Read</button>
+                <button type="button" class="btn btn-secondary">Upload</button>
+                <button type="button" class="btn btn-secondary">Clear</button>
             </div>
         </form>
     </div>
